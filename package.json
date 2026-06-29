@@ -1,0 +1,21 @@
+{
+  "name": "verity",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Verity MCP Server",
+  "main": "dist/mcp/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "better-sqlite3": "^11.1.2",
+    "chokidar": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.3"
+  }
+}

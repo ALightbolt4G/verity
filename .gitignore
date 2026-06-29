@@ -1,0 +1,5 @@
+node_modules
+dist
+verity.db
+verity.db-journal
+.env
