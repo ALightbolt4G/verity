@@ -4,6 +4,14 @@
   "type": "module",
   "description": "Verity MCP Server",
   "main": "dist/mcp/server.js",
+  "bin": {
+    "verity": "./dist/main.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/mcp/server.js"

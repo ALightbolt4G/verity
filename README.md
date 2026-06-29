@@ -26,6 +26,18 @@ node dist/main.js /path/to/your/project
 ```
 Connect your MCP client to the server via standard I/O.
 
+MCP config example:
+```json
+{
+  "mcpServers": {
+    "verity": {
+      "command": "node",
+      "args": ["/path/to/verity/dist/main.js", "/path/to/your/project"]
+    }
+  }
+}
+```
+
 ### MCP Tools
 - `index_directory(dirPath)`: Force re-index a specific directory.
 - `query_knowledge(keyword)`: Semantic search over the extracted facts.
