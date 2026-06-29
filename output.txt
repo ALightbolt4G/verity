@@ -1,0 +1,62 @@
+=== query_knowledge (Alight) ===
+1. [الشخصيات الرئيسية (باختصار)] *   **ألايت (Alight):** البطل الذي انتقل من عالمه إلى أثيريا. لا يمتلك مانا ولكنه يعتمد على ذكائه وقدرته على "العودة بالموت" لتغيير المصير.
+2. {"type":"causal","cause":"\"Don't worry","effect":"much, Alight,\" Elara called out smoothly","heading":"None"}
+3. {"type":"causal","cause":"\"","effect":", Alight","heading":"None"}
+4. {"type":"character_state","name":"There","state":"something specific that mathematically puzzles me greatly, Alight,\" Olfer said as he casually grabbed a dirty cloth and began wiping thick grease from one of the brass gears","heading":"None"}
+5. {"type":"character_state","name":"What","state":"this cursed, aggressive black magic, Alight","heading":"None"}
+6. {"type":"character_state","name":"This","state":"Alight,\" Marie answered almost immediately","heading":"None"}
+7. {"type":"temporal","marker":"after","context":"the strange, seemingly mundane servant named Alight finally left the tense atmosphere of the grand lobby, and the imposing Lady Marie stepped forward to formally lead the way toward Lord Orion's secured private wing, the young, exhausted boy carrying the heavy, oversized leather messenger bag slowly turned his head toward his terrifying master","heading":"None"}
+8. {"type":"character_state","name":"Alight","state":"just disappeared","heading":"None"}
+9. {"type":"character_state","name":"Alight","state":"just taken, as if he still, clearly saw his lingering, traumatized phantom standing right there","heading":"None"}
+10. {"type":"character_state","name":"This","state":"my loyal, personal servant and official, trusted guard, Alight,\" Marie instantly, interrupted in a strict, sharp voice, setting the necessary political things perfectly straight, and drawing a, visible red political line in the sand that was not to be casually crossed by anyone","heading":"None"}
+11. {"type":"causal","cause":"one vital piece of tactical information I will somehow manage to pass on to you in this damn, doomed timeline, Alight,","effect":"you can properly use it when you successfully return","heading":"None"}
+12. {"type":"temporal","marker":"then","context":"what do you mean, Alight","heading":"None"}
+13. {"type":"causal","cause":"I love you, Alight","effect":"\"","heading":"None"}
+14. {"type":"temporal","marker":"finally","context":"have a moment to breathe, Alight","heading":"None"}
+15. {"type":"character_state","name":"She","state":"a trained, lethal assassin, Alight","heading":"None"}
+16. {"type":"character_state","name":"Rosy","state":"simply sipped her tea, her delicate porcelain face unreadable, before murmuring softly, *'An interesting investment, Alight","heading":"None"}
+17. {"type":"temporal","marker":"before","context":"murmuring softly, *'An interesting investment, Alight","heading":"None"}
+18. {"type":"character_state","name":"This","state":"a anticipated event, Alight,\" she explained, her voice carrying the proud tone of a general reviewing her beloved troops","heading":"None"}
+19. {"type":"negation","name":"Dark","negated_state":"just a mindless, wandering anomaly, Alight","heading":"None"}
+20. {"type":"character_state","name":"It","state":"a classified, tier-four offensive incantation hard-coded into my combat protocols by the Lighten Mansion's original founders, Master Alight,\" she answered in her usual emotionless tone","heading":"None"}
+21. [I] "My primary, hard-coded directive is the absolute protection of Lady Marie, and by extension, you, Alight," Martha stated flatly, her voice carrying the rigid weight of an unyielding protocol. "Leaving you here, completely isolated in a hostile, unsecured forest, guarded only by unpredictable mercenaries and a literal monster of shadow, directly violates the core parameters of my duty."
+22. [II] "You should not walk so heavily, Alight. A trained assassin could track your clumsy footsteps from half a mile away."
+23. {"type":"causal","cause":"\"You should not walk","effect":"heavily, Alight","heading":"II"}
+24. [I] The profound, traumatic memory of dying in Alight's arms in the dirty snow of the slums had fundamentally altered something deep within her soul. The lingering fear of death had been entirely burned away, replaced by an absolute, freezing hatred for those who preyed on the weak.
+25. [I] *Where are you, Alight?* she thought silently, her fingers lightly touching the cold glass.
+26. [II] "Alight," Olfer said, adjusting his broken glasses with a mud-stained finger. "Thank statistics I found you. This forest is a geographical and logistical nightmare."
+27. [V] "No! Wait!" Yuki bellowed, his voice raw and breaking. He was physically dragging himself through the mud toward us, his aristocratic pride completely shattered, his eyes reflecting pure, unadulterated horror. "Alight! Hold on!"
+28. [II] A deep, painful lump formed in Marie's throat. Hearing about Alight's reckless, heroic kindness from the very children he had saved in the village made her chest ache with an unbearable, heavy sadness.
+29. {"type":"action","subject":"Hearing","verb":"about","object":"Alight","heading":"II"}
+30. [V] "Alight?!" Marie gasped, instantly rising from her seat, her blue eyes wide with profound shock at my sudden, battered appearance.
+31. [V] "Alight, what is that?!" Marie screamed from the open door, her eyes locking onto the glowing bomb.
+32. [VI] "Alight! Alight, please!"
+33. [VI] "Why do you keep doing this?" Marie cried, looking up at me, her eyes burning with a desperate, painful confusion. "After everything I said to you at the council... after I publicly called you a stupid, reckless servant and abandoned you in the capital just to push you away... why do you constantly throw your fragile life away for me? I am a monster, Alight! I have dark magic! People look at me and they only see fear! They only look at me with absolute, freezing hatred! I don't deserve this!"
+34. {"type":"character_state","name":"Alight","state":"just a stupid, clumsy servant","heading":"None"}
+35. {"type":"negation","name":"She","negated_state":"dead, Alight","heading":"None"}
+36. [I. Main Characters] *   **Alight (Takemi Alight):** The 18-year-old protagonist transported from modern Earth. Unlike typical heroes, he possesses absolutely zero mana and no combat skills. His only power is the traumatic ability to "Return by Death." He relies entirely on his intellect, psychological manipulation, and data gathered from his own gruesome deaths to survive.
+37. [I. Main Characters] *   **Martha:** The Head Maid of the Lighten Mansion. Originally a heavily programmed, ruthless assassin who poisoned Alight in earlier loops. Through Alight's interventions, she rediscovers her suppressed humanity and becomes his fiercely loyal, silent protector.
+38. [I. Main Characters] *   **Olfer Kazov:** A brilliant but paranoid scientist and mechanic. He operates a hidden underground workshop and studies quantum mechanics and temporal anomalies. He acts as Alight's intellectual anchor and provides him with the specialized copper watch.
+39. [IV. Antagonists & Key Figures] *   **Vairena:** An extremely dangerous, sadistic, and psychopathic killer that Alight suffered under during his earlier, chaotic temporal loops.
+40. [V. Magic System & Mechanics] *   **Mana:** The fundamental magical energy of Aetheria. It is used to cast spells, reinforce physical strength, and power complex Magi-Tech machinery. Alight is considered an anomaly because his body is completely void of it.
+41. {"type":"character_state","name":"Alight","state":"considered an anomaly because his body is completely void of it","heading":"V. Magic System & Mechanics"}
+42. {"type":"causal","cause":"his body is completely void of it","effect":"Alight is considered an anomaly","heading":"V. Magic System & Mechanics"}
+43. [V. Magic System & Mechanics] *   **Time!Shift (Return After Death):** Alight's cursed ability and the namesake of the story. Upon dying, his consciousness is violently dragged backward in time to a specific "save point." The physical pain (phantom pains) and psychological trauma of the death carry over, forcing him to adapt or go insane.
+44. {"type":"temporal","marker":"after","context":"Death):** Alight's cursed ability and the namesake of the story","heading":"V. Magic System & Mechanics"}
+45. [V. Magic System & Mechanics] *   **The Copper Watch / Suicide Watch:** A specialized quantum device created by Olfer. It remains completely unaffected by temporal resets, acting as Alight's only reliable, physical method to track the loops. It was later modified into a "Suicide Watch" containing a micro-needle that instantly injects a lethal neurotoxin, ensuring Alight's rapid death and Return by Death if captured.
+46. {"type":"character_state","name":"It","state":"later modified into a \"Suicide Watch\" containing a micro-needle that instantly injects a lethal neurotoxin, ensuring Alight's rapid death and Return by Death if captured","heading":"V. Magic System & Mechanics"}
+47. {"type":"temporal","marker":"later","context":"modified into a \"Suicide Watch\" containing a micro-needle that instantly injects a lethal neurotoxin, ensuring Alight's rapid death and Return by Death if captured","heading":"V. Magic System & Mechanics"}
+48. [VI. Lore & Cosmic Entities] *   **The Great Tree of Life:** A legendary, massive landmark in Aetheria. The location chosen by Alight to bait Garek Thorne and Titan Dark into a mutual destruction trap.
+49. [VII. Locations] *   **Lighten Mansion (Vinkler Crystal Palace):** The luxurious, heavily fortified aristocratic estate belonging to the Vinkler family (Marie and Lord Orion). It serves as the claustrophobic site of many of Alight's early, gruesome deaths and is filled with deadly secrets, programmed assassins, and Olfer's hidden underground workshop.
+=== query_knowledge (Takemi) ===
+1. {"type":"causal","cause":"complex mechanical watches do not lie, Takemi","effect":"\"","heading":"None"}
+2. [II] "Excuse me, Lady," the little girl asked timidly. "Are you a friend of Takemi?"
+3. [II] Marie lowered her guard, her expression softening. "Takemi?"
+4. [I. Main Characters] *   **Alight (Takemi Alight):** The 18-year-old protagonist transported from modern Earth. Unlike typical heroes, he possesses absolutely zero mana and no combat skills. His only power is the traumatic ability to "Return by Death." He relies entirely on his intellect, psychological manipulation, and data gathered from his own gruesome deaths to survive.
+=== get_entity (Alight) ===
+Name: ألايت (Alight)
+Type: emphasis
+File: D:\time!shift (1)\ar\glossary_ar.md
+Line: 49
+Relations:
+None

@@ -64,7 +64,7 @@ export class KnowledgeStore {
   }
 
   public getEntity(name: string): Entity | null {
-    const stmt = this.db.prepare(`SELECT * FROM entities WHERE name LIKE '%' || ? || '%'`);
+    const stmt = this.db.prepare(`SELECT * FROM entities WHERE name LIKE '%' || ? || '%' ORDER BY CASE WHEN name GLOB '*[a-zA-Z]*' THEN 0 ELSE 1 END ASC`);
     const row = stmt.get(name) as any;
     if (!row) return null;
     

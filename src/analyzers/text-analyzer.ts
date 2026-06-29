@@ -17,10 +17,17 @@ export class TextAnalyzer extends BaseAnalyzer {
   }
 
   private analyzeTxt(content: string): AnalysisResult {
-    const facts = content
-      .split(/(?<=[.!?])\s+/)
-      .map(s => s.trim())
-      .filter(s => s.length > 0);
+    const lines = content.split('\n');
+    const facts: string[] = [];
+    
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (line.length > 0) {
+        facts.push(line);
+        facts.push(...this.analyzeEnglishContext(line, i + 1, null));
+      }
+    }
+    
     return { entities: [], relations: [], facts };
   }
 
@@ -112,6 +119,10 @@ export class TextAnalyzer extends BaseAnalyzer {
         }
       }
 
+      if (!isBlank) {
+        facts.push(...this.analyzeEnglishContext(line, lineNum, currentHeadingText));
+      }
+
       const boldRegex = /\*\*(.*?)\*\*|__(.*?)__/g;
       let boldMatch;
       while ((boldMatch = boldRegex.exec(line)) !== null) {
@@ -159,5 +170,60 @@ export class TextAnalyzer extends BaseAnalyzer {
     }
 
     return { entities, relations, facts };
+  }
+
+  private analyzeEnglishContext(line: string, lineNum: number, heading: string | null): string[] {
+    const extractedFacts: string[] = [];
+    const quoteCount = (line.match(/["']/g) || []).length;
+    if (quoteCount > 3) return extractedFacts;
+    const h = heading || 'None';
+
+    const svoRegex = /\b([A-Z][a-z]+)\s+([a-z]+(?:ed|s)?)\s+([A-Z][a-z]+)\b/g;
+    let svoMatch;
+    while ((svoMatch = svoRegex.exec(line)) !== null) {
+      if (!['The', 'A', 'An', 'This', 'That'].includes(svoMatch[1])) {
+        extractedFacts.push(JSON.stringify({ type: "action", subject: svoMatch[1], verb: svoMatch[2], object: svoMatch[3], heading: h }));
+      }
+    }
+
+    const negRegex = /\b([A-Z][a-z]+)\s+(is not|never|no longer)\s+([^.!?]+)/g;
+    let negMatch;
+    const negatedNames = new Set<string>();
+    while ((negMatch = negRegex.exec(line)) !== null) {
+      extractedFacts.push(JSON.stringify({ type: "negation", name: negMatch[1], negated_state: negMatch[3].trim(), heading: h }));
+      negatedNames.add(negMatch[1]);
+    }
+
+    const stateRegex = /\b([A-Z][a-z]+)\s+(is|was|had|felt|became)\s+([^.!?]+)/g;
+    let stateMatch;
+    while ((stateMatch = stateRegex.exec(line)) !== null) {
+      if (!negatedNames.has(stateMatch[1]) && !line.substring(stateMatch.index, Math.min(stateMatch.index + 20, line.length)).includes(' not ')) {
+        extractedFacts.push(JSON.stringify({ type: "character_state", name: stateMatch[1], state: stateMatch[3].trim(), heading: h }));
+      }
+    }
+
+    const causalRegex = /([^.!?]+)\b(because|therefore|so|as a result)\b([^.!?]+)/gi;
+    let causalMatch;
+    while ((causalMatch = causalRegex.exec(line)) !== null) {
+      let cause = '';
+      let effect = '';
+      const conj = causalMatch[2].toLowerCase();
+      if (conj === 'because') {
+        effect = causalMatch[1].trim();
+        cause = causalMatch[3].trim();
+      } else {
+        cause = causalMatch[1].trim();
+        effect = causalMatch[3].trim();
+      }
+      extractedFacts.push(JSON.stringify({ type: "causal", cause, effect, heading: h }));
+    }
+
+    const tempRegex = /\b(before|after|then|when|finally|later)\b\s+([^.!?]+)/gi;
+    let tempMatch;
+    while ((tempMatch = tempRegex.exec(line)) !== null) {
+      extractedFacts.push(JSON.stringify({ type: "temporal", marker: tempMatch[1].toLowerCase(), context: tempMatch[2].trim(), heading: h }));
+    }
+
+    return extractedFacts;
   }
 }
